@@ -17,7 +17,15 @@ int partition(int low, int high);
 int main()
 {
 	srand(time(NULL));
+	printf("정렬 전 : ");
+	for (int i = 0; i <= (sizeof(S) / (sizeof(int)) - 1); i++)
+	{
+		printf("%d ", S[i]);
+	}
+	printf("\n\n정렬 후 : ");
+
 	quicksort(0, (sizeof(S) / (sizeof(int)) - 1));
+
 
 	for (int i = 0; i <= (sizeof(S) / (sizeof(int)) - 1); i++)
 	{
@@ -52,14 +60,12 @@ int partition(int low, int high) {
 	{temp = S[randnum]; S[randnum] = S[low]; S[low] = temp; }
 	for (i = low + 1; i <= high; i++) {
 		if (S[i] < pivotitem) {
-			temp = S[i]; S[i] = S[j]; S[j] = temp;
 			j++;
+			temp = S[i]; S[i] = S[j]; S[j] = temp;
 			pivotpoint = j;
 		}
 	}
-	temp = S[low];
-	S[low] = S[pivotpoint];
-	S[pivotpoint] = temp;
+	temp = S[low];S[low] = S[pivotpoint];S[pivotpoint] = temp;
 
 	return pivotpoint;
 }
