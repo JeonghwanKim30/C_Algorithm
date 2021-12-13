@@ -1,6 +1,7 @@
 # C_Algorithm
-This repository is for code I took in Algorithm class
+Repository for code I took in Algorithm class
 
 
 Contents
  1. P1 (QuickSort)
+ 2. p1_2 (Perming)
