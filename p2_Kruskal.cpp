@@ -1,8 +1,8 @@
 /*
-	file : p2.cpp
+	file : p2_Kruskal.cpp
 	author : Kimjeonghwan
 	datetime : 2021-12-11
-	description : Read '02ÁÖÂ÷ - Kruskal.txt'. 
+	description : Read '02_Kruskal.txt'. 
 		then by Using fun CollapsingFind and WeightedUnion, make Data Struct. and then output all node that we used.
 		Fun 'CollapsingFind' return root and make all node's parent value to root.
 		If roots of vertices a and b are the same, they form a cycle.
