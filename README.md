@@ -3,5 +3,6 @@ Repository for code I took in Algorithm class
 
 
 Contents
- 1. P1 (QuickSort)
+ 1. p1 (QuickSort)
  2. p1_2 (Perming)
+ 3. p2 (Kruskal)
